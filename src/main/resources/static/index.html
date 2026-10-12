@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Finder</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>GitHub User Finder</h1>
+            <p>Enter a GitHub username to view their public profile.</p>
+        </header>
+
+        <form id="searchForm" class="search-form">
+            <input id="username" type="text" placeholder="GitHub username"
+                   aria-label="GitHub username" maxlength="39" autocomplete="off" required>
+            <button id="searchButton" type="submit">Search</button>
+        </form>
+
+        <p id="status" class="status" role="status" aria-live="polite">
+            Try a username such as octocat.
+        </p>
+
+        <section id="profileSection" class="profile" hidden>
+            <div class="profile-header">
+                <img id="avatar" src="" alt="GitHub avatar">
+                <div>
+                    <h2 id="name">Developer</h2>
+                    <a id="login" href="#" target="_blank" rel="noopener noreferrer">@username</a>
+                </div>
+            </div>
+
+            <p id="bio" class="bio"></p>
+
+            <div class="details">
+                <p><strong>Location:</strong> <span id="location">Not specified</span></p>
+                <p><strong>Company:</strong> <span id="company">Not specified</span></p>
+                <p><strong>Website:</strong> <a id="blog" target="_blank" rel="noopener noreferrer">Not specified</a></p>
+                <p><strong>Joined:</strong> <span id="joined">Not available</span></p>
+            </div>
+
+            <div class="stats">
+                <div><strong id="repos">0</strong><span>Repositories</span></div>
+                <div><strong id="followers">0</strong><span>Followers</span></div>
+                <div><strong id="following">0</strong><span>Following</span></div>
+            </div>
+
+            <a id="profileLink" class="view-profile" href="#" target="_blank"
+               rel="noopener noreferrer">View GitHub Profile</a>
+        </section>
+
+        <footer>Built with Java Spring Boot and the GitHub REST API.</footer>
+    </main>
+</body>
+</html>

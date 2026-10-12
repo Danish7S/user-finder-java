@@ -1,0 +1,4 @@
+com\example\githubuserfinder\GithubUserFinderApplication.class
+com\example\githubuserfinder\service\GitHubUserService.class
+com\example\githubuserfinder\controller\GitHubUserController.class
+com\example\githubuserfinder\dto\GitHubUser.class
